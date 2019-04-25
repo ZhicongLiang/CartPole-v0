@@ -6,8 +6,6 @@ Reproducing https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.
 initializer policy_net  
 initializer target_net = policy_net  
 
-<br/>
-
 In each episode:  
 initializer env  
 In each step:  
