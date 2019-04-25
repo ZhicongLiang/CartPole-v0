@@ -18,12 +18,12 @@ a_t = mixture(random aciton, max_{a_t}(aciton_value))
 get s_t+1, reward by env.step(a_t)  
 store(s_t, a_t, reward, s_t+1)  
 optimizer:  
-        sample (s_t, a_t, reward, s_t+1) batch  
-        state_aciton_value = policy(state_batch)  
-        next_state_value = target_net(next_state)  
-        expected_state_action_values = (next_state_value * GAMMA + reward_batch  
-        # bellman equation:  
-        loss = HuberLoss(state_action_values, expected_state_aciton_values)  
-        loss.bachward()  
+&nbsp; sample (s_t, a_t, reward, s_t+1) batch  
+&nbsp; state_aciton_value = policy(state_batch)  
+&nbsp; next_state_value = target_net(next_state)  
+&nbsp; expected_state_action_values = (next_state_value * GAMMA + reward_batch  
+&nbsp; # bellman equation:  
+&nbsp; loss = HuberLoss(state_action_values, expected_state_aciton_values)  
+&nbsp; loss.bachward()  
 
 ~~~
