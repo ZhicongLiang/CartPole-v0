@@ -2,6 +2,7 @@
 Reproducing https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
 
 ## key steps:
+~~~
 
 initializer policy_net  
 initializer target_net = policy_net  
@@ -24,3 +25,5 @@ optimizer:
         # bellman equation:  
         loss = HuberLoss(state_action_values, expected_state_aciton_values)  
         loss.bachward()  
+
+~~~
